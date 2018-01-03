@@ -4,6 +4,9 @@ nav{
 	height: 80px;
 }
 
+.menu-top{
+	display: inline-block;
+}
 
 .sos{
 	background-color: #BB0E12;
@@ -20,7 +23,7 @@ nav{
 hr {
 	border: 0; 
 	height: 0; 
-	border-top: 2px double black; 
+	border-top: 4px double black; 
 	text-align:center;
 }
 
@@ -31,4 +34,13 @@ hr:after {
 	font-size: 34px;
 	line-height: 34px; 
 	color: black;
+}
+
+.cont-4-fotos{
+	display: inline-block;
+}
+
+.news img{
+	width: 260px;
+	height: 260px;
 }
