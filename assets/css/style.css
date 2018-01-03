@@ -40,7 +40,11 @@ hr:after {
 	display: inline-block;
 }
 
+.news{
+	display: inline-block;
+	overflow: auto;
+}
 .news img{
-	width: 260px;
-	height: 260px;
+	width: 100%;
+	height: auto;
 }
