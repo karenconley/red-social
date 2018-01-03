@@ -12,41 +12,68 @@
 </head>
 
 <body>
-<header>
-	<nav>
-		
+	<header>
+		<div class="container-fluid menu">
+			<h2>SOS Mascotas</h2>
+			<h5>Lorem ipsum dolor sit amet</h5>
+			<ul class="nav nav-pills navbar-nav navbar-right">
+				<li role="presentation" class="active"><a href="#">SOS</a></li>
+				<li role="presentation"><a href="#">Perdidos</a></li>
+				<li role="presentation"><a href="#">Hogar temporal</a></li>
+				<li role="presentation"><a href="#">Traslados</a></li>
+				<li role="presentation"><a href="#">Vet</a></li>
+				<li role="presentation"><a href="#">En adopción</a></li>
+
+				<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+			</ul>
+		</div>
+	</header>
 
 
-	</nav>
-</header>
-
-<section class="sos">
+<!-- Mapa -->
+<section>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-x2-12 col-sm-12 col-md-12 col-lg-12">
-	<h1 class="text-center">SOS</h1>
-	<h4 class="text-center">Rescates / Emergencias veterinarias</h4>
-</div>
-</div>
-</div>
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+				<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6658.879083504409!2d-70.64431961855468!3d-33.43785332777225!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513178925048" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ab veniam facilis nihil dolore sunt, fugit quod! Temporibus omnis doloremque nam qui assumenda accusamus at molestiae fugiat, veniam necessitatibus magnam.</p>
+			</div>
+		</div>
+	</div>
 </section>
 
 
+<section class="newsfeed" id="newsfeed-sos">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-x2-12 col-sm-12 col-md-12 col-lg-12">
+				<h4 class="text-center">Emergencias actuales en desarrollo</h4>
+				<hr>
+			</div>
+		</div>
+	</div>
+</section>
 
+<section class="newsfeed" id="newsfeed-perdidos">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-x2-12 col-sm-12 col-md-12 col-lg-12">
+				<h4 class="text-center">Mascotas perdidas</h4>
+				<hr>
+			</div>
+		</div>
+	</div>
+</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/app.js"></script>
-</body>
-</html>
+<section class="newsfeed" id="newsfeed-adopcion">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-x2-12 col-sm-12 col-md-12 col-lg-12">
+				<h4 class="text-center">Buscan un hogar</h4>
+				<hr>
+			</div>
+		</div>
+	</div>
+</section>
