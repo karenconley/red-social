@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+</head>
+<body>
+    <!-- Modal registro -->
+    <div id="modalSesion" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div style="padding: 20px;" id="form-olvidado">
+                        <form accept-charset="UTF-8" role="form" id="login-form" method="post">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    ¿Ya tienes una cuenta?
+                                </button>
+                                <p class="text-center">
+                                    O crea una cuenta nueva
+                                </p>
+                            </div>
+                            <fieldset>
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="exampleInput3">Nombre</label>
+                                        <input type="text" class="form-control" id="exampleInput3" placeholder="Nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="exampleInputPassword3">Apellido</label>
+                                        <input type="text" class="form-control" id="exampleInput3" placeholder="Apellido">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Correo Electrónico: laboratoria@lab.cl" name="mail" type="mail" required="" autofocus="">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Teléfono" name="telefono" type="tel" value="" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Ciudad" name="ciudad" type="text" value="" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="(Opcional: Código de invitación)" name="codigo" type="tel" value="" required="">
+                                </div>
+                                <div class="form-group">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-primary btn-yellow btn-block dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="true">
+                                            ¿Cómo te enteraste de nosotros?
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li>
+                                                <a href="#">Facebook</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Internet</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Television</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Otros</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        ENVIAR
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal login -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <img class="img-circle avatar" src="user.jpg" alt="avatar">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="text-center">Inicia Sesión</h3>
+                </div>
+                <div class="modal-body">
+                    <div style="padding: 20px;" id="form-olvidado">
+                        <form accept-charset="UTF-8" role="form" id="login-form" method="post">
+                            <fieldset>
+                                <div class="form-group input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-user"></i>
+                                    </span>
+                                    <input class="form-control" placeholder="Username" name="username" type="username" required="" autofocus="">
+                                </div>
+                                <div class="form-group input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-lock">
+                                        </i>
+                                    </span>
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="" required="">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">
+                                        Access
+                                    </button>
+                                    <p class="help-block">
+                                        <a class="pull-right text-muted" href="#" id="olvidado">
+                                            <small>Forgot your password?</small>
+                                        </a>
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <p>
+        <a class="btn btn-white btn-lg hidden-xs" href="#" data-toggle="modal" data-target="#modalSesion" role="button">REGISTRATE</a>
+    </p>
+
+    <p>
+        <a class="btn btn-white btn-lg hidden-xs" href="#" data-toggle="modal" data-target="#myModal" role="button">Inicia Sesión</a>
+    </p>
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
