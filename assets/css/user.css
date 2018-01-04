@@ -1,3 +1,5 @@
+/*USER.HTML*/
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -114,4 +116,85 @@ body {
 .iconList {
     display: block;
     width: 100%;
+}
+
+@media (max-width: 499px) {
+    .avaimg {
+        width: 30%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+    .avaimg {
+        width: 20%;
+    }
+    .about {
+        margin: 2% 5% 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .background {
+        padding: 5% 0 2%;
+    }
+    .avaimg {
+        width: 15%;
+    }
+    .followbtn {
+        display: none;
+    }
+    .followbtn2 {
+        width: 20%;
+        display: inline-block;
+    }
+    .inputCo {
+        margin: 1em 0 3em;
+    }
+    .about {
+        margin: 2% 5% 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .background {
+        padding: 2% 0 1%;
+    }
+    .avaimg {
+        width: 10%;
+    }
+    .followbtn {
+        display: none;
+    }
+    .followbtn2 {
+        width: 20%;
+        display: inline-block;
+    }
+    .inputCo {
+        margin: 1em 0 3em;
+    }
+    .about {
+        margin: 2% 5% 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .background {
+        padding: 1% 0 0.5em;
+    }
+    .avaimg {
+        width: 10%;
+    }
+    .followbtn {
+        display: none;
+    }
+    .followbtn2 {
+        width: 10%;
+        display: inline-block;
+    }
+    .inputCo {
+        margin: 1em 0 3em;
+    }
+    .about {
+        margin: 1% 5% 0;
+    }
 }

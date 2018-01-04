@@ -40,6 +40,10 @@ hr:after {
 	color: black;
 }
 
+.newsfeed{
+	padding-top: 60px;
+}
+
 .cont-4-fotos{
 	display: inline-block;
 }
@@ -55,10 +59,19 @@ hr:after {
 
 
 
+
+
+
 /*UPLOAD.HTML*/
 
 .progress{
 	margin-top: 20px;
+}
+
+/*MODAL*/
+.avatar {
+    width: 10em;
+    height: 10em;
 }
 
 /*LOGIN.HTML*/
