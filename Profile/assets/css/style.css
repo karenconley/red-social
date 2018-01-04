@@ -1,0 +1,117 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.p-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*avatar style*/
+
+.background {
+    background-image: url(../img/backdogs.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: #000000b9;
+    margin: 0;
+    padding: 10% 0 5%;
+}
+
+.avatar {
+    color: #ffffff;
+}
+
+.avatar img {
+    margin: 0 auto;
+    display: block;
+}
+
+.about {
+    margin: 5% 5% 0;
+    font-size: 0.8em;
+    display: block;
+}
+
+.numbers hr {
+    color: #fffd86;
+    width: 70%;
+}
+
+.numbers li {
+    color: #ffffff;
+    margin: 2% 5%;
+}
+
+.numbers h3 {
+    font-weight: 600;
+}
+
+.numbers p {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.avatar p {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.followbtn {
+    background-color: rgb(255, 150, 65);
+    margin: 5% auto;
+    padding: 1em;
+    width: 100%;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.followbtn2 {
+    background-color: rgb(255, 150, 65);
+    padding: 1em;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 600;
+    width: 30%;
+    display: none;
+}
+
+.inputCo {
+    margin: 1em 0 3em;
+}
+
+
+/*comments style*/
+
+.avatarPost {
+    width: 3em;
+}
+
+.comment {
+    margin-bottom: 2em;
+    display: block;
+}
+
+.block {
+    display: block;
+    width: 5%;
+    height: 1em;
+}
+
+.iconList {
+    display: block;
+    width: 100%;
+}
