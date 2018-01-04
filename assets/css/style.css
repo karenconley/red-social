@@ -1,12 +1,17 @@
 
 nav{
-	background-color: #FDFDF7;
-	height: 60px;
+	background-color: #FFF;
+	height: 70px;
 	padding-top: 5px;
 }
 
 .menu-top{
 	display: inline-block;
+}
+
+#first-aid{
+	width: 100%;
+	height: auto;
 }
 
 .sos{
@@ -22,6 +27,11 @@ nav{
 
 #publica{
 	padding: 12px;
+}
+
+/*slider*/
+.adaptar{
+	width: 100%;
 }
 
 hr {
@@ -41,7 +51,7 @@ hr:after {
 }
 
 .newsfeed{
-	padding-top: 60px;
+	padding-top: 20px;
 }
 
 .cont-4-fotos{
@@ -57,10 +67,14 @@ hr:after {
 	height: auto;
 }
 
+footer{
+	padding: 20px;
+}
 
-
-
-
+/*HOGAR TEMPORAL*/
+.profile.pic{
+	
+}
 
 /*UPLOAD.HTML*/
 
