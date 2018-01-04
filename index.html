@@ -14,41 +14,82 @@
 <body>
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
-		<div class="navbar-header">
+		<div class="navbar-header navbar-right">
+			<!-- 
 			<ul class="menu-top list-inline">
 				<li><h2>SOS Mascotas</h2></li>
 				<li><h5>Lorem ipsum dolor sit amet</h5></li>
 			</ul>
-			<ul class="nav nav-pills navbar-nav navbar-right">
+			 -->
+			<ul class="nav nav-pills navbar-nav">
 				<li role="presentation" class="active"><a href="#">SOS</a></li>
 				<li role="presentation"><a href="#">Perdidos</a></li>
 				<li role="presentation"><a href="#">Hogar temporal</a></li>
 				<li role="presentation"><a href="#">Traslados</a></li>
 				<li role="presentation"><a href="#">Vet</a></li>
 				<li role="presentation"><a href="#">En adopción</a></li>
-				<li role="presentation"><a href="#">PUBLICA TU CASO</a></li>
+				<button type="button" class="btn btn-default navbar-btn btn-md">PUBLICA TU CASO</button>
 			</ul>
 		</div>
 	</div>
 </nav>
 
-<!-- Mapa -->
-<section>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-				<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6658.879083504409!2d-70.64431961855468!3d-33.43785332777225!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513178925048" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ab veniam facilis nihil dolore sunt, fugit quod! Temporibus omnis doloremque nam qui assumenda accusamus at molestiae fugiat, veniam necessitatibus magnam.</p>
-			</div>
-		</div>
-	</div>
-</section>
+<!-- Carrusel -->
 
-<!-- Sección Noticias: SOS -->
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="assets/img/carrusel1.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="assets/img/carrusel2.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="assets/img/carrusel3.jpeg" alt="New York">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+<!-- Sección Noticias 1: SOS -->
 <section class="newsfeed" id="newsfeed-sos">
 	<div class="container-fluid">
+		<!-- row título 'Urgente' -->
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<!-- título sección -->
@@ -56,39 +97,42 @@
 					<h4 class="text-center">Urgente</h4>
 					<hr>
 				</div>
-				<div class="cont-4-fotos col-xs-12 col-sm-12 col-md-3 col-lg-3">
-					<!-- foto, localización y descripción 1 -->
-					<div class="news">
-						<a href="sos_1.html"><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_sos1.jpg" alt=""></a>
-						<h5 class="text-center">RECOLETA</h5>
-						<h5 class="text-center">Gatito abandonado en la calle akjsdhak sdjhads kajsdh aksjdha skjd...</h5>
-					</div>
-					<!-- foto, localización y descripción 2 -->
-					<div class="news">
-						<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_sos2.jpg" alt=""></a>
-						<h5 class="text-center">CERRO NAVIA</h5>
-						<h5 class="text-center">Perros en un predio sin comida ni agua...</h5>
-					</div>
-					<!-- foto, localización y descripción 3 -->
-					<div class="news">
-						<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_sos3.jpg" alt=""></a>
-						<h5 class="text-center">LA GRANJA</h5>
-						<h5 class="text-center">Recién nacidos botados en una plaza</h5>
-					</div>
-					<!-- foto, localización y descripción 4 -->
-					<div class="news">
-						<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_sos4.jpg" alt=""></a>
-						<h5 class="text-center">ESTACIÓN CENTRAL</h5>
-						<h5 class="text-center">Gatitos botados en una caja en la calle</h5>
-					</div>
-				</div>
 			</div>
-		</div>
-	</div>
+		</div> <!-- /.row -->
+		<!-- row 4 fotos 'Urgente' -->
+		<div class="row fotos">
+			<div class="cont-4-fotos col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<!-- foto, localización y descripción 1 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href="sos_1.html"><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_sos1.jpg" alt=""></a>
+					<h5 class="text-center">RECOLETA</h5>
+					<h5 class="text-center">"Gatito abandonado en la calle akjsdhak sdjhads kajsdh aksjdha skjd..."</h5>
+				</div>
+				<!-- foto, localización y descripción 2 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_sos2.jpg" alt=""></a>
+					<h5 class="text-center">CERRO NAVIA</h5>
+					<h5 class="text-center">"Perros en una parcela abandonada sin comida ni agua..."</h5>
+				</div>
+				<!-- foto, localización y descripción 3 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_sos3.jpg" alt=""></a>
+					<h5 class="text-center">LA GRANJA</h5>
+					<h5 class="text-center">"Recién nacidos botados en una plaza..."</h5>
+				</div>
+				<!-- foto, localización y descripción 4 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_sos4.jpg" alt=""></a>
+					<h5 class="text-center">ESTACIÓN CENTRAL</h5>
+					<h5 class="text-center">"Gatitos botados en una caja en la calle..."</h5>
+				</div>
+			</div> <!-- /.div cont-4-fotos -->
+		</div> <!-- /.row fotos -->
+	</div> <!-- /.container-fluid -->
 </section>
 
 
-<!-- Sección Noticias: Perdidos -->
+<!-- Sección Noticias 2: Perdidos -->
 <section class="newsfeed" id="newsfeed-perdidos">
 	<div class="container-fluid">
 		<div class="row">
@@ -98,39 +142,41 @@
 					<h4 class="text-center">Mascotas perdidas</h4>
 					<hr>
 				</div>
-				<div class="cont-4-fotos col-xs-12 col-sm-12 col-md-3 col-lg-3">
-					<!-- foto, localización y descripción 1 -->
-					<div class="news">
-						<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_perdido1.jpg" alt=""></a>
-						<h5 class="text-center">PROVIDENCIA</h5>
-						<h5 class="text-center">Hembra, se perdió el 28 de diciembre en el sector de las calles Seminario con...</h5>
-					</div>
-					<!-- foto, localización y descripción 2 -->
-					<div class="news">
-						<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_perdido2.jpg" alt=""></a>
-						<h5 class="text-center">COLINA</h5>
-						<h5 class="text-center" class="text-center">Macho, perdido en... </h5>
-					</div>
-					<!-- foto, localización y descripción 3 -->
-					<div class="news">
-						<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_perdido3.jpg" alt=""></a>
-						<h5 class="text-center">QUILPUÉ</h5>
-						<h5 class="text-center">Hembra, perdida en plaza Cumming... </h5>
-					</div>
-					<!-- foto, localización y descripción 4 -->
-					<div class="news">
-						<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_perdido4.jpg" alt=""></a>
-						<h5 class="text-center">SANTIAGO CENTRO</h5>
-						<h5 class="text-center">Macho, perdido el 10 de dic, necesita sus medicamentos...</h5>
-					</div>
+			</div>
+		</div> <!-- /row -->
+		<div class="row fotos">
+			<div class="cont-4-fotos col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<!-- foto, localización y descripción 1 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_perdido1.jpg" alt=""></a>
+					<h5 class="text-center">PROVIDENCIA</h5>
+					<h5 class="text-center">"Hembra, se perdió el 28 de diciembre en el sector de las calles Seminario con..."</h5>
+				</div>
+				<!-- foto, localización y descripción 2 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_perdido2.jpg" alt=""></a>
+					<h5 class="text-center">COLINA</h5>
+					<h5 class="text-center" class="text-center">"Macho, perdido en..."</h5>
+				</div>
+				<!-- foto, localización y descripción 3 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_perdido3.jpg" alt=""></a>
+					<h5 class="text-center">QUILPUÉ</h5>
+					<h5 class="text-center">"Hembra, perdida en plaza Cumming..."</h5>
+				</div>
+				<!-- foto, localización y descripción 4 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_perdido4.jpg" alt=""></a>
+					<h5 class="text-center">SANTIAGO CENTRO</h5>
+					<h5 class="text-center">"Macho, perdido el 10 de dic, necesita sus medicamentos..."</h5>
 				</div>
 			</div>
-		</div>
-	</div>
+		</div> <!-- /row fotos -->
+	</div> <!-- /container-fluid -->
 </section>
 
 
-<!-- Sección Noticias: En adopción -->
+<!-- Sección Noticias 3: En adopción -->
 <section class="newsfeed" id="newsfeed-adopcion">
 	<div class="container-fluid">
 		<div class="row">
@@ -140,35 +186,38 @@
 					<h4 class="text-center">Buscan un hogar</h4>
 					<hr>
 				</div>
-				<div class="cont-4-fotos col-xs-12 col-sm-12 col-md-3 col-lg-3">
-					<!-- foto, localización y descripción 1 -->
-					<div class="news">
-						<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_adopcion1.jpg" alt=""></a>
-						<h5 class="text-center">HEMBRA, 3 MESES</h5>
-						<h5 class="text-center">Desperasitada y vacunada, se entrega con compromiso de esterilización...</h5>
-					</div>
-					<!-- foto, localización y descripción 2 -->
-					<div class="news">
-						<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_adopcion2.jpg" alt=""></a>
-						<h5 class="text-center">MACHO, 2 AÑOS</h5>
-						<h5 class="text-center">Dócil, se lleva bien con los niños...</h5>
-					</div>
-					<!-- foto, localización y descripción 3 -->
-					<div class="news">
-						<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_adopcion3.jpg" alt=""></a>
-						<h5 class="text-center">MACHO, 1 MES Y MEDIO</h5>
-						<h5 class="text-center">Sano, ya tiene su primera vacuna...</h5>
-					</div>
-					<!-- foto, localización y descripción 4 -->
-					<div class="news">
-						<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_adopcion4.jpg" alt=""></a>
-						<h5 class="text-center">HEMBRA, 2 MESES</h5>
-						<h5 class="text-center">Juguetona, un poco temerosa pero tiene gran capacidad de adaptación...</h5>
-					</div>
-				</div> <!-- </.cont-4-fotos> -->
 			</div>
-		</div> <!-- </.row> -->
-	</div> <!-- </.container-fluid -->
+		</div>
+		<div class="row">
+			<div class="cont-4-fotos col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<!-- foto, localización y descripción 1 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_adopcion1.jpg" alt=""></a>
+					<h5 class="text-center">HEMBRA, 3 MESES</h5>
+					<h5 class="text-center">Desperasitada y vacunada, se entrega con compromiso de esterilización...</h5>
+				</div>
+				<!-- foto, localización y descripción 2 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_adopcion2.jpg" alt=""></a>
+					<h5 class="text-center">MACHO, 2 AÑOS</h5>
+					<h5 class="text-center">Dócil, se lleva bien con los niños...</h5>
+				</div>
+				<!-- foto, localización y descripción 3 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_adopcion3.jpg" alt=""></a>
+					<h5 class="text-center">MACHO, 1 MES Y MEDIO</h5>
+					<h5 class="text-center">Sano, ya tiene su primera vacuna...</h5>
+				</div>
+				<!-- foto, localización y descripción 4 -->
+				<div class="news col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<a href=""><img class="img-responsive img-thumbnail" src="assets/img/newsfeed_adopcion4.jpg" alt=""></a>
+					<h5 class="text-center">HEMBRA, 2 MESES</h5>
+					<h5 class="text-center">Juguetona, un poco temerosa pero tiene gran capacidad de adaptación...</h5>
+				</div>
+			</div> <!-- /cont-4-fotos -->
+		</div> <!-- /row -->
+	</div> <!-- /container-fluid -->
 </section>
+
 
 </body>
