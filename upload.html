@@ -36,118 +36,111 @@
 
 <div class="container">
   <div class="panel panel-default">
-      <div class="panel-heading"><strong>Sube fotos/videos de tu caso y describe la situación</strong></div>
-      <div class="panel-body">
-
-<!-- Paso 1: Localización -->
-<h4>1. Selecciona tu comuna</h4>
-
-<select class="form-control">
-  <option value="">Alhué</option>
-  <option value="">Buin</option>
-  <option value="">Calera de Tango</option>
-  <option value="">Cerrillos</option>
-  <option value="">Cerro Navia</option>
-  <option value="">Colina</option>
-  <option value="">Conchalí</option>
-  <option value="">Curacaví</option>
-  <option value="">El Bosque</option>
-  <option value="">El Monte</option>
-  <option value="">Estación Central</option>
-  <option value="">Huechuraba</option>
-  <option value="">Independencia</option>
-  <option value="">Isla de Maipo</option>
-  <option value="">La Cisterna</option>
-  <option value="">La Florida</option>
-  <option value="">La Granja</option>
-  <option value="">La Pintana</option>
-  <option value="">La Reina</option>
-  <option value="">Lampa</option>
-  <option value="">Las Condes</option>
-  <option value="">Lo Barnechea</option>
-  <option value="">Lo Espejo</option>
-  <option value="">Lo Prado</option>
-  <option value="">Macul</option>
-  <option value="">Maipú</option>
-  <option value="">María Pinto</option>
-  <option value="">Melipilla</option>
-  <option value="">Ñuñoa</option>
-  <option value="">Padre Hurtado</option>
-  <option value="">Paine</option>
-  <option value="">Pedro Aguirre Cerda</option>
-  <option value="">Peñaflor</option>
-  <option value="">Peñalolén</option>
-  <option value="">Pirque</option>
-  <option value="">Providencia</option>
-  <option value="">Pudahuel</option>
-  <option value="">Puente Alto</option>
-  <option value="">Quilicura</option>
-  <option value="">Quinta Normal</option>
-  <option value="">Recoleta</option>
-  <option value="">Renca</option>
-  <option value="">San Bernardo</option>
-  <option value="">San Joaquín</option>
-  <option value="">San José de Maipo</option>
-  <option value="">San Miguel</option>
-  <option value="">San Pedro</option>
-  <option value="">San Ramón</option>
-  <option value="">Santiago</option>
-  <option value="">Talagante</option>
-  <option value="">Til Til</option>
-  <option value="">Vitacura</option>
-</select>
-
-<!-- Paso 2: Descripción -->
-<h4>2. Describe tu caso:</h4>
-<textarea class="form-control" rows="3"></textarea>
-
-      
-
-
-
-
-
-
-
-
-          <!-- Selección de archivos-->
-          <h4>3. Selecciona los archivos</h4>
-          <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
-            <div class="form-inline">
-              <div class="form-group">
-                <input type="file" name="files[]" id="js-upload-files" multiple>
-              </div>
-              <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Subir archivos</button>
-            </div>
-          </form>
-
-          <!-- Progress Bar -->
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-              <span class="sr-only">60% Complete</span>
-            </div>
-          </div>
-
-          <!-- Upload Finished -->
-          <div class="js-upload-finished">
-            <h4>Archivos procesados</h4>
-            <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Subido exitosamente</span>image-01.jpg</a>
-              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Subido exitosamente</span>image-02.jpg</a>
-            </div>
-          </div>
-        </div>
+      <div class="panel-heading">
+        <strong>Sube fotos/videos de tu caso y describe la situación</strong>
       </div>
-    </div> <!-- /container -->
+      <div class="panel-body"></div>
+  </div>
+  <!-- Paso 1: Localización -->
+  <h4>1. Selecciona tu comuna</h4>
+  <select id="comuna" class="form-control">
+    <option value="">Alhué</option>
+    <option value="">Buin</option>
+    <option value="">Calera de Tango</option>
+    <option value="">Cerrillos</option>
+    <option value="">Cerro Navia</option>
+    <option value="">Colina</option>
+    <option value="">Conchalí</option>
+    <option value="">Curacaví</option>
+    <option value="">El Bosque</option>
+    <option value="">El Monte</option>
+    <option value="">Estación Central</option>
+    <option value="">Huechuraba</option>
+    <option value="">Independencia</option>
+    <option value="">Isla de Maipo</option>
+    <option value="">La Cisterna</option>
+    <option value="">La Florida</option>
+    <option value="">La Granja</option>
+    <option value="">La Pintana</option>
+    <option value="">La Reina</option>
+    <option value="">Lampa</option>
+    <option value="">Las Condes</option>
+    <option value="">Lo Barnechea</option>
+    <option value="">Lo Espejo</option>
+    <option value="">Lo Prado</option>
+    <option value="">Macul</option>
+    <option value="">Maipú</option>
+    <option value="">María Pinto</option>
+    <option value="">Melipilla</option>
+    <option value="">Ñuñoa</option>
+    <option value="">Padre Hurtado</option>
+    <option value="">Paine</option>
+    <option value="">Pedro Aguirre Cerda</option>
+    <option value="">Peñaflor</option>
+    <option value="">Peñalolén</option>
+    <option value="">Pirque</option>
+    <option value="">Providencia</option>
+    <option value="">Pudahuel</option>
+    <option value="">Puente Alto</option>
+    <option value="">Quilicura</option>
+    <option value="">Quinta Normal</option>
+    <option value="">Recoleta</option>
+    <option value="">Renca</option>
+    <option value="">San Bernardo</option>
+    <option value="">San Joaquín</option>
+    <option value="">San José de Maipo</option>
+    <option value="">San Miguel</option>
+    <option value="">San Pedro</option>
+    <option value="">San Ramón</option>
+    <option value="">Santiago</option>
+    <option value="">Talagante</option>
+    <option value="">Til Til</option>
+    <option value="">Vitacura</option>
+  </select>
+  <!-- Paso 2: Descripción -->
+  <h4>2. Describe tu caso:</h4>
+  <label for="title">Titulo</label>
+  <input id="titleSOS" type="text" class="form-control">
+  <label for="description">Descripción</label>
+  <textarea id="description"class="form-control" rows="3"></textarea>
+    <!-- Selección de archivos-->
+    <h4>3. Selecciona los archivos</h4>
+    <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+      <div class="form-inline">
+        <div class="form-group">
+          <input type="file" name="files[]" id="js-upload-files" multiple>
+        </div>
+        <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Subir archivos</button>
+      </div>
+    </form>
+    <!-- Progress Bar -->
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+        <span class="sr-only">60% Complete</span>
+      </div>
+    </div>
+    <!-- Upload Finished -->
+    <div class="js-upload-finished">
+      <h4>Archivos procesados</h4>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Subido exitosamente</span>image-01.jpg</a>
+        <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Subido exitosamente</span>image-02.jpg</a>
+      </div>
+    </div>
+    <div id="add" class="">
+      <a href="#!" class="modal-action modal-close btn btn-primary addBtn">Agregar</a>
+    </div>
+</div>
 
-
-
-
+  <!-- /container -->
+  <div id="postSOS" class="container-fluid">
+  </div>
 
 <!-- jQuery -->
-<!-- <script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--<script src="assets/js/jquery-3.2.1.min.js"></script>
 <!-- JS Bootstrap -->
-<!-- <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 <!-- JS -->
 <script src="assets/js/upload.js"></script>
 </body>

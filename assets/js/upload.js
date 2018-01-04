@@ -1,4 +1,4 @@
-+ function($) {
+/*+ function($) {
     'use strict';
 
     // UPLOAD CLASS DEFINITION
@@ -36,3 +36,43 @@
     }
 
 }(jQuery);
+
+*/
+
+$(document).ready(function () {
+    var num = 0;
+
+    //event click btn addSOS
+    $('#add').click(function () {
+        var title = $('#titleSOS').val();
+        var description = $('#description').val();
+        var comuna = $("#comuna option:selected").text();
+        //var comuna = $('#comuna').val();
+        //var contactId = 'contact_' + num;
+        //var deleteId = 'delete_' + num;
+
+        //add SOS
+        $('#postSOS').append(
+            '<p class="nameStyle">' + title + description + comuna + '</p>' 
+        );
+        
+        //remove addSOS form
+        $('.container').remove();
+
+        //sum cont Id
+        num++;
+
+        //input clean
+        $('#title').val("");
+        $('#description').val("");
+        $('#comuna').val("");
+
+
+        /*
+        $('#' + deleteId).click(function () {
+            $('#' + contactId).remove();
+        });
+        */
+    });
+
+});

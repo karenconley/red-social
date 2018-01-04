@@ -71,15 +71,14 @@ footer{
 	padding: 20px;
 }
 
-/*HOGAR TEMPORAL*/
-.profile.pic{
-	
-}
-
 /*UPLOAD.HTML*/
 
 .progress{
 	margin-top: 20px;
+}
+
+.addBtn{
+	float: left;
 }
 
 /*MODAL*/
