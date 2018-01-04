@@ -1,7 +1,8 @@
 
 nav{
 	background-color: #FDFDF7;
-	height: 80px;
+	height: 60px;
+	padding-top: 5px;
 }
 
 .menu-top{
@@ -19,6 +20,9 @@ nav{
 	display: inline-block;
 }
 
+#publica{
+	padding: 12px;
+}
 
 hr {
 	border: 0; 
