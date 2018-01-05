@@ -21,13 +21,10 @@ nav{
 	color: #FFF;
 }
 
-.menu{
-	display: inline-block;
-}
-
 #publica{
 	padding: 12px;
 }
+
 
 /*slider*/
 .adaptar{
@@ -150,6 +147,11 @@ footer{
 }
 .omb_login .omb_loginForm  .help-block {
     color: red;
+}
+
+#iniciar-sesion{
+margin-top: 10px;
+margin-bottom: 10px;
 }
 
 	

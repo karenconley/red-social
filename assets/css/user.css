@@ -18,6 +18,34 @@ body {
 }
 
 
+/*barra de navegación */
+nav{
+    background-color: #FFF;
+    height: 70px;
+    padding-top: 5px;
+}
+
+.menu-top{
+    display: inline-block;
+}
+
+#first-aid{
+    width: 100%;
+    height: auto;
+}
+
+.sos{
+    background-color: #BB0E12;
+    width: 100%;
+    height: 500px;
+    color: #FFF;
+}
+
+#publica{
+    padding: 12px;
+}
+
+
 /*avatar style*/
 
 .background {
