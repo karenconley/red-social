@@ -10,7 +10,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/user.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -18,30 +18,29 @@
 </head>
 <body>
 
+    <!-- navbar -->
     <nav class="navbar">
-    <div class="container-fluid">
-        <!-- logo + título página -->
-        <ul class="menu-top list-inline">
-            <li><img class="img-responsive id="first-aid" src="assets/img/first-aid-3-small.jpg" alt=""></li>
-            <li><h5>Lorem ipsum dolor sit amet</h5></li>
-        </ul>
-        <!-- opciones menú de navegación -->
-        <div class="navbar-header navbar-right">
-            <ul class="nav nav-pills navbar-nav">
-                <li role="presentation"><a href="#"><strong>SOS</strong></a></li>
-                <li role="presentation"><a href="#">Perdidos</a></li>
-                <li role="presentation"><a href="hogar-temporal.html">Hogar temporal</a></li>
-                <li role="presentation"><a href="#">Veterinarios</a></li>
-                <li role="presentation"><a href="#">Adopción</a></li>
-                <li><a class="btn btn-white btn-lg hidden-xs" href="#" data-toggle="modal" data-target="#myModal" role="button">Inicia Sesión</a></li>
-                <!-- sacar -->
-                <a class="btn btn-danger" href="upload.html" id="publica" role="button"><strong>PUBLICA TU CASO</strong></a>
+        <div class="container">
+            <!-- logo -->
+            <ul class="menu-top list-inline">
+                <li><a href="index.html"><img class="img-responsive id="logo" src="assets/img/logo-sm.png" alt=""></a></li>
             </ul>
+            <!-- opciones menú de navegación -->
+            <div class="navbar-header navbar-right">
+                <ul class="nav nav-pills navbar-nav">
+                    <li role="presentation"><a href="#"><strong>SOS</strong></a></li>
+                    <li role="presentation"><a href="#">Perdidos</a></li>
+                    <li role="presentation"><a href="hogar-temporal.html">Hogar temporal</a></li>
+                    <li role="presentation"><a href="veterinarios.html">Veterinarios</a></li>
+                    <li role="presentation"><a href="#">Adopción</a></li>
+                    <!-- botón rojo -->
+                    <a class="btn btn-danger" href="upload.html" id="publica" role="button"><strong>PUBLICA TU CASO</strong></a>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="seccion">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-0">
                 <div class="profile">
@@ -50,8 +49,7 @@
                             <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" class="img-circle avaimg"> 
                             <h3>User Name</h3>
                             <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Santiago</p>
-                            <p class="text-center">Hogar temporal</p>
-                        </div>
+                            <a href=""><p class="text-center">Hogar temporal</p></a>
                         <ul class="text-center list-inline numbers">
                             <hr>
                             <li>

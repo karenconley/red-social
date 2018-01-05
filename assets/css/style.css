@@ -6,15 +6,22 @@
 
 nav {
     background-color: #FFF;
-    height: 70px;
+    height: 80px;
     padding-top: 5px;
 }
 
+nav li a{
+    margin-top: 20px;
+}
+
+#inicia a{
+font-size: 15px;
+}
 .menu-top {
     display: inline-block;
 }
 
-#first-aid {
+#logo {
     width: 100%;
     height: auto;
 }
@@ -26,21 +33,20 @@ nav {
     color: #FFF;
 }
 
-.menu {
-    display: inline-block;
-}
-
 #publica {
     padding: 12px;
+    margin-top: 20px;
+}
+
+/* Slider */
+
+
+.container {
+    margin-top: 20px;
 }
 
 
-/*slider*/
-
-.adaptar {
-    width: 100%;
-}
-
+/* hr secciones */
 hr {
     border: 0;
     height: 0;
@@ -57,6 +63,7 @@ hr:after {
     color: black;
 }
 
+/* noticias */
 .newsfeed {
     padding-top: 20px;
 }
@@ -90,6 +97,15 @@ footer {
     float: left;
 }
 
+/*formato para simulación de imagen cargada*/
+.upThumbs {
+    width: 50vh;
+    background-color: #b8b8b8;
+    font-size: 6em;
+    color:#525252;
+    padding: 2%;
+    }
+
 
 /*MODAL*/
 
@@ -120,7 +136,7 @@ footer {
 }
 
 .omb_login .omb_socialButtons a {
-    color: white; // In yourUse @body-bg 
+    color: white; 
     opacity: 0.9;
 }
 
@@ -177,6 +193,11 @@ footer {
     color: red;
 }
 
+#iniciar-sesion{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
     .omb_login .omb_forgotPwd {
         text-align: right;
@@ -186,6 +207,7 @@ footer {
 
 
 /*POSTEO SOS*/
+
 .p-0 {
     padding-left: 0;
     padding-right: 0;
@@ -277,6 +299,7 @@ iframe {
 }
 
 /*media queries Posteo SOS*/
+
 @media (max-width: 499px) {
     .rescBtn {
         display: none;

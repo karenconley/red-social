@@ -9,8 +9,7 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/slider.css">
-	<title>SOS Pets</title>
+	<title>app</title>
 
 </head>
 
@@ -167,9 +166,51 @@
     </div>
 <!-- FIN MODAL -->
 
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+                <li><a href="#">Veterinarias</a></li>
+<li><a href="#">Hogar temporal</a></li>
+      </ul>
+      <form class="navbar-form navbar-left">
+      </form>
 
 
-<!-- navbar -->
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="#"><strong>SOS</strong></a></li>
+        <li><a href="#">Perdidos</a></li>
+        <li><a href="#">Hogar temporal</a></li>
+        <li><a href="#">Veterinarias</a></li>
+        <li><a href="#">Adopción</a></li>
+
+        <button type="submit" class="btn btn-danger" href="upload.html" id="publica"">PUBLICA TU CASO</button>
+
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+<!-- navbar viejo-->
 <nav class="navbar">
 	<div class="container">
 		<!-- logo -->
@@ -192,56 +233,31 @@
 	</div>
 </nav>
 
-<!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
+<!-- Carrusel -->
+<section id="slider" class="carousel slide container">
+	<ol class="carousel-indicators">
+		<li data-target="#slider" data-slide-to="0" class="active"></li>
+		<li data-target="#slider" data-slide-to="1"></li>
+		<li data-target="#slider" data-slide-to="2"></li>
+	</ol>
+
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="assets/img/carrusel1.jpg" class="adaptar">
+		</div>
+		<div class="item">
+			<img src="assets/img/carrusel2.jpg" class="adaptar">
+		</div>
+		<div class="item">
+			<img src="assets/img/carrusel3.jpg" class="adaptar">
+		</div>
+	</div>
+
+	<!-- flechas-->
+	<a href="#slider" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	<a href="#slider" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</section><br>
+
 
 
 
@@ -253,7 +269,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<!-- título sección -->
 				<div class="title-section">
-					<h4 class="text-center">SOS</h4>
+					<h4 class="text-center">Urgente</h4>
 					<hr>
 				</div>
 			</div>
@@ -290,8 +306,6 @@
 					<h5 class="text-center">"Gatitos botados en una caja en la calle..."</h5>
 				</div>
 			</div> <!-- /.div cont-4-fotos -->
-			<!-- botón "ver más" -->
-			<div class="col-md-12 col-lg-12 text-center"><button class="btn btn-default more-btn" type="submit">Ver más</button></div>
 		</div> <!-- /.row fotos -->
 	</div> <!-- /.container -->
 </section>
@@ -336,8 +350,6 @@
 					<h5 class="text-center">"Macho, perdido el 10 de dic, necesita sus medicamentos..."</h5>
 				</div>
 			</div>
-			<!-- botón "ver más" -->
-			<div class="col-md-12 col-lg-12 text-center"><button class="btn btn-default more-btn" type="submit">Ver más</button></div>
 		</div> <!-- /row fotos -->
 	</div> <!-- /container -->
 </section>
@@ -382,14 +394,10 @@
 					<h5 class="text-center">Juguetona, un poco temerosa pero tiene gran capacidad de adaptación...</h5>
 				</div>
 			</div> <!-- /cont-4-fotos -->
-			<!-- botón "ver más" -->
-			<div class="col-md-12 col-lg-12 text-center"><button class="btn btn-default more-btn" type="submit">Ver más</button></div>
 		</div> <!-- /row -->
 	</div> <!-- /container -->
 </section>
 
-<!-- sjdlfkd lskdj alsdkjasdl askdjasldkja sldkjasl dkja sldkja lsdkj alskjd  -->
-<!-- kdjhaksdjas kdjhakdjashd -->
 
 <footer>
 	<hr>

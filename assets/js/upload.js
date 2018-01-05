@@ -39,10 +39,11 @@
 
 */
 
-//subir POST SOS y comentar dentro de la página
 $(document).ready(function () {
     $('#postSOS').hide();
-    //event click btn publicar SOS post
+    var num = 0;
+
+    //event click btn subir SOS
     $('#add').click(function () {
         var title = $('#titleSOS').val();
         var description = $('#description').val();
@@ -50,80 +51,45 @@ $(document).ready(function () {
         var dt = new Date();
         var time = dt.getHours() + ":" + dt.getMinutes();
         var date = dt.toLocaleDateString();
-        var image = new Image();
-        var src = 'assets/img/intro.jpg';
-        //muestra contenedor de post publicado
+        //var comuna = $('#comuna').val();
+        //var contactId = 'contact_' + num;
+        //var deleteId = 'delete_' + num;
+
+        //muestra contenedor
         $('#postSOS').show();
-        //agrega los datos
+
+        //add SOS
         $('#title').append(
-            '<h3 class="titleC">' +
-            title +
-            '</h3>'
+            '<h3 class="titleC">' + title + '</h3>'
         );
         $('#comunaText').text(comuna);
         $('#descriptionText').text(description);
-        $('#timeText').text(time + '  ' + date);
-        $('#imgSOSpreview').append(
-            '<img src="' +
-            src +
-            '" alt="" class="img-responsive imgSOS">'
-        );
-        //remueve contenedor formulario
+        $('#timeText').text(time + '   ' + date);
+
+        //remove contenedor 
         $('#uploadCont').remove();
-        //funcion para publicar comentarios
-        $('#sendComment').click(function () {
-            var comment = $('#comment').val();
-            $('#commentsCont').append(
-                '<hr>' +
-                '<div class="media">' +
-                '<div class="media-left">' +
-                '<a href="javascript:void(0)">' +
-                '<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="media-object img-circle avatarPost">' +
-                '</a>' +
-                '</div>' +
-                '<div class="media-body">' +
-                '<h4 class="media-heading"> Lucky Sans' +
-                '<br>' +
-                '<small>' +
-                '<i class="fa fa-clock-o">' +
-                '</i>' +
-                date +
-                ','+
-                ' ' +
-                time +
-                ' hrs' +
-                '</small>' +
-                '</h4>' +
-                '<p>' + comment +
-                '</p>' +
-                '<ul class="nav nav-pills pull-left">' +
-                '<li>' +
-                '<a href="" title="">' +
-                '<i class="glyphicon glyphicon-thumbs-up">' +
-                '</i>' +
-                ' 8' +
-                '</a>' +
-                '</li>' +
-                '<li>' +
-                '<a href="" title="">' +
-                '<i class=" glyphicon glyphicon-comment">' +
-                '</i>' +
-                ' 8' +
-                '</a>' +
-                '</li>' +
-                '<li>' +
-                '<a href="" title="">' +
-                '<i class="glyphicon glyphicon-share-alt">' +
-                '</i>' +
-                ' 10' +
-                '</a>' +
-                '</li>' +
-                '</ul>' +
-                '</div>' +
-                '</div>'
-            );
-            //limpia input
-            $('#comment').val("");
+
+        //input clean
+        $('#title').val("");
+        $('#description').val("");
+        $('#comuna').val("");
+        
+        var image = new Image();
+        var src = 'assets/img/intro.jpg'; //Esta es la variable que contiene la url de una imagen ejemplo, luego puedes poner la que quieras
+        //image.src = src;
+
+        $('#imgSOSpreview').append(image);
+        $('#imgSOSpreview').append(
+        '<img src="' + src + '" alt="" class="img-responsive imgSOS">'
+        );
+
+
+
+        /*
+        $('#' + deleteId).click(function () {
+            $('#' + contactId).remove();
         });
+        */
     });
+
 });
