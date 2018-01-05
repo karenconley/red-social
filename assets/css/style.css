@@ -1,90 +1,106 @@
-
-nav{
-	background-color: #FFF;
-	height: 70px;
-	padding-top: 5px;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.menu-top{
-	display: inline-block;
+nav {
+    background-color: #FFF;
+    height: 70px;
+    padding-top: 5px;
 }
 
-#first-aid{
-	width: 100%;
-	height: auto;
+.menu-top {
+    display: inline-block;
 }
 
-.sos{
-	background-color: #BB0E12;
-	width: 100%;
-	height: 500px;
-	color: #FFF;
+#first-aid {
+    width: 100%;
+    height: auto;
 }
 
-#publica{
-	padding: 12px;
+.sos {
+    background-color: #BB0E12;
+    width: 100%;
+    height: 500px;
+    color: #FFF;
+}
+
+.menu {
+    display: inline-block;
+}
+
+#publica {
+    padding: 12px;
 }
 
 
 /*slider*/
-.adaptar{
-	width: 100%;
+
+.adaptar {
+    width: 100%;
 }
 
 hr {
-	border: 0; 
-	height: 0; 
-	border-top: 4px double black; 
-	text-align:center;
+    border: 0;
+    height: 0;
+    border-top: 4px double black;
+    text-align: center;
 }
 
 hr:after {
-	position: relative; 
-	top: -22px; 
-	content:"\25cf\25cf\25cf"; 
-	font-size: 34px;
-	line-height: 34px; 
-	color: black;
+    position: relative;
+    top: -22px;
+    content: "\25cf\25cf\25cf";
+    font-size: 34px;
+    line-height: 34px;
+    color: black;
 }
 
-.newsfeed{
-	padding-top: 20px;
+.newsfeed {
+    padding-top: 20px;
 }
 
-.cont-4-fotos{
-	display: inline-block;
+.cont-4-fotos {
+    display: inline-block;
 }
 
-.news{
-	display: inline-block;
-	overflow: auto;
-}
-.news img{
-	width: 100%;
-	height: auto;
+.news {
+    display: inline-block;
+    overflow: auto;
 }
 
-footer{
-	padding: 20px;
+.news img {
+    width: 100%;
+    height: auto;
 }
+
+footer {
+    padding: 20px;
+}
+
 
 /*UPLOAD.HTML*/
 
-.progress{
-	margin-top: 20px;
+.progress {
+    margin-top: 20px;
 }
 
-.addBtn{
-	float: left;
+.addBtn {
+    float: left;
 }
+
 
 /*MODAL*/
+
 .avatar {
     width: 10em;
     height: 10em;
 }
 
+
 /*LOGIN.HTML*/
+
 
 /*
     Note: It is best to use a less version of this file ( see http://css2less.cc
@@ -100,64 +116,229 @@ footer{
 
 .omb_login .omb_authTitle {
     text-align: center;
-	line-height: 300%;
+    line-height: 300%;
 }
-	
+
 .omb_login .omb_socialButtons a {
-	color: white; // In yourUse @body-bg 
-	opacity:0.9;
+    color: white; // In yourUse @body-bg 
+    opacity: 0.9;
 }
+
 .omb_login .omb_socialButtons a:hover {
     color: white;
-	opacity:1;    	
+    opacity: 1;
 }
-.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
-.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
-.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
 
+.omb_login .omb_socialButtons .omb_btn-facebook {
+    background: #3b5998;
+}
+
+.omb_login .omb_socialButtons .omb_btn-twitter {
+    background: #00aced;
+}
+
+.omb_login .omb_socialButtons .omb_btn-google {
+    background: #c32f10;
+}
 
 .omb_login .omb_loginOr {
-	position: relative;
-	font-size: 1.5em;
-	color: #aaa;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
+    position: relative;
+    font-size: 1.5em;
+    color: #aaa;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
+
 .omb_login .omb_loginOr .omb_hrOr {
-	background-color: #cdcdcd;
-	height: 1px;
-	margin-top: 0px !important;
-	margin-bottom: 0px !important;
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
+
 .omb_login .omb_loginOr .omb_spanOr {
-	display: block;
-	position: absolute;
-	left: 50%;
-	top: -0.6em;
-	margin-left: -1.5em;
-	background-color: white;
-	width: 3em;
-	text-align: center;
-}			
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -0.6em;
+    margin-left: -1.5em;
+    background-color: white;
+    width: 3em;
+    text-align: center;
+}
 
 .omb_login .omb_loginForm .input-group.i {
-	width: 2em;
+    width: 2em;
 }
-.omb_login .omb_loginForm  .help-block {
+
+.omb_login .omb_loginForm .help-block {
     color: red;
 }
 
-#iniciar-sesion{
-margin-top: 10px;
-margin-bottom: 10px;
-}
-
-	
 @media (min-width: 768px) {
     .omb_login .omb_forgotPwd {
         text-align: right;
-		margin-top:10px;
- 	}		
+        margin-top: 10px;
+    }
+}
+
+
+/*POSTEO SOS*/
+.p-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.rescBtn {
+    background-color: rgb(255, 115, 0);
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.colorB {
+    background-color: rgb(255, 115, 0);
+    color: #ffffff;
+}
+
+.colorF {
+    color: rgb(255, 115, 0);
+}
+
+.mBottom-1 {
+    margin-bottom: 2em;
+}
+
+.mTop-1 {
+    margin-top: 2em;
+}
+
+.titleC {
+    font-weight: bold;
+    color: #525252;
+}
+
+.userTitle {
+    font-weight: 600;
+}
+
+.descText {
+    font-size: 1.1em;
+}
+
+.SOSinfo {
+    margin-right: 2%;
+    width: 100%;
+}
+
+iframe {
+    border-radius: 0.5em;
+}
+
+.avatarPost {
+    width: 3em;
+}
+
+.rescBtn-xs {
+    width: 100%;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.rescBtn-md {
+    width: 100%;
+    padding: 1em 0;
+}
+
+#hora {
+    color: #818181;
+}
+
+#postSOS hr {
+    margin: 2em 0;
+    border: 0;
+    background-color: #818181;
+    height: 1px;
+    text-align: center;
+}
+
+#postSOS hr::after {
+    border: 0;
+    height: 0;
+    margin: 0;
+    background-color: #52525200;
+    border-color: #52525200;
+}
+
+.iconMed {
+    display: block;
+}
+
+/*media queries Posteo SOS*/
+@media (max-width: 499px) {
+    .rescBtn {
+        display: none;
+    }
+    .rescBtn-md {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+    .rescBtn {
+        display: none;
+    }
+    .rescBtn-md {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .rescBtn-xs {
+        display: none;
+    }
+    .rescBtn-md {
+        display: none;
+    }
+    #infoSOS {
+        margin-top: 2em;
+    }
+    .imgSOS {
+        border-radius: 0.5em;
+    }
+    .inputCo {
+        margin: 1em 0 3em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .rescBtn-xs {
+        display: none;
+    }
+    .rescBtn {
+        display: none;
+    }
+    #infoSOS {
+        margin-top: 2em;
+    }
+    .imgSOS {
+        border-radius: 0.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rescBtn-xs {
+        display: none;
+    }
+    .rescBtn {
+        display: none;
+    }
+    #infoSOS {
+        margin-top: 2em;
+    }
+    .imgSOS {
+        border-radius: 0.5em;
+    }
 }

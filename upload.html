@@ -10,13 +10,13 @@
 	<!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
     <!-- logo + título página -->
     <ul class="menu-top list-inline">
-     <a href="index.html"><li><img class="img-responsive id="first-aid" src="assets/img/first-aid-3-small.jpg" alt=""></li></a>
+     <a href="index.html">
+       <li><img class="img-responsive" id="first-aid" src="assets/img/first-aid-3-small.jpg" alt=""></li></a>
       <li><h5>Lorem ipsum dolor sit amet</h5></li>
     </ul>
     <!-- opciones menú de navegación -->
@@ -39,8 +39,8 @@
 		</div>
 	</div>
 </nav>
-
-<div class="container">
+<!--formulario para SOS post-->
+<div id="uploadCont" class="container">
   <div class="panel panel-default">
       <div class="panel-heading">
         <strong>Sube fotos/videos de tu caso y describe la situación</strong>
@@ -138,10 +138,118 @@
     </div>
 </div>
 
-  <!-- /container -->
-  <div id="postSOS" class="container-fluid">
+<!--Post SOS-->
+<div id="postSOS" class="container-fluid">
+  <div class="row ">
+    <div class="container">
+      <div id="infoSOS" class="col-xs-12 col-sm-12 col-md-12 p-0">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 p-0">
+            <div class="text-rigth">
+              <div id="imgSOSpreview" class="img-responsive imgSOS">
+              </div>
+            </div>
+            <button id="rescateBtn-xs" class="btn rescBtn-xs text-center pull-right colorB mBottom-1">Rescatar</button>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="container SOSinfo">
+              <button id="rescateBtn" class="btn rescBtn btn-lg text-center pull-right mTop-1">Rescatar</button>
+              <div id="title"></div>
+              <p id="user" class="usertitle mBottom-1">
+                publicado por
+                <a>
+                  <strong class="colorF">Pepita</strong>
+                </a>
+              </p>
+              <p>
+                <span class="glyphicon glyphicon glyphicon-time colorF" aria-hidden="true"></span>
+                <span id="timeText">Hoy, 06:30 am</span>
+              </p>
+              <p>
+                <span class="glyphicon glyphicon-map-marker colorF" aria-hidden="true"></span>
+                <strong id="comunaText">Santiago</strong>
+              </p>
+              <div class="">
+                <p id="descriptionText" class=" mBottom-1 text-left">Perrito abandonado en caja de cartón a las 6 de la mañana en Recoleta</p>
+              </div>
+              <div class="maps mBottom-1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d832.5402651982371!2d-70.64226243823467!3d-33.41904508068858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5ebb9db324b%3A0xec27a99048bbbaec!2sBlanco+Recoleta+IF!5e0!3m2!1ses-419!2scl!4v1515100341019"
+                  width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              <button id="rescateBtn-md" class="btn rescBtn-md text-center pull-right colorB">Rescatar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
+  <!--INPUT comentarios-->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 mTop-1 mBottom-1">
+        <div class="inputCo">
+          <form>
+            <textarea id="comment" class="form-control" placeholder="ingresa tu mensaje"></textarea>
+            <br>
+            <ul class="nav nav-pills pull-left iconMedia">
+              <li>
+                <a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="photo">
+                  <i class="glyphicon glyphicon-camera"></i>
+                </a>
+              </li>
+              <li>
+                <a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture">
+                  <i class="glyphicon glyphicon-picture"></i>
+                </a>
+              </li>
+            </ul>
+            <button id="sendComment" type="submit" class="btn btn-success pull-right">Comentar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--lista de comentarios-->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+        <hr class="">
+        <div id="commentsCont" class="media-list">
+          <!--Comentario de ejemplo-->
+          <div class="media">
+            <div class="media-left">
+              <a href="javascript:void(0)">
+                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="media-object img-circle avatarPost"> </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"> Pedrito Pérez
+                <br>
+                <small>
+                  <i class="fa fa-clock-o"></i> Today, 2:00 hrs</small>
+              </h4>
+              <p>Cras sit amet nibh libero, in gravida nulla.
+                odio.
+              </p>
+              <ul class="nav nav-pills pull-left">
+                <li>
+                  <a href="" title="">
+                    <i class="glyphicon glyphicon-thumbs-up"></i> 8</a>
+                </li>
+                <li>
+                  <a href="" title="">
+                    <i class=" glyphicon glyphicon-comment"></i> 8</a>
+                </li>
+                <li>
+                  <a href="" title="">
+                    <i class="glyphicon glyphicon-share-alt"></i> 10</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!--<script src="assets/js/jquery-3.2.1.min.js"></script>
